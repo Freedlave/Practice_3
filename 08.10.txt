@@ -35,6 +35,24 @@
 	else: 
     		print('Корней нет')
 
+5. 	import random
+
+	a = random.randint(1,100)
+	n = int(input("Угадай число от 1 до 100. Сколько попыток тебе нужно?: "))
+
+	while n!=0 :
+    		t=int(input("Угадай: "))
+	if t==a:
+    		print ("Ты угадал!!!)))")
+	break
+	elif t>x:
+    		print ("Отгадываемое число меньше")
+	elif t<x:
+    		print ("Отгадываемое число больше")
+	n=n-1
+	if k==0:
+    		print("Попытки закончились:( Ты проиграл(((")
+
 6. 	print('Введите список чисел: ')
 	a = input()
 	b = a.split(' ')
