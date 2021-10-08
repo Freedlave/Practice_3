@@ -1,0 +1,42 @@
+1. 	a = float(input())
+	if a%2==0:
+    		print('Четное число')
+	else:
+    		print('Нечетное число')
+
+2. 	a = float(input('Введите градусы Цельсия: '))
+	a = (a*1.8)+32
+	print('Градусы по Фаренгейту', a)
+
+3. 	a = float(input('Введите число: '))
+	if (a%5!=0) and (a%7!=0):
+    		print('00')
+	elif (a%5==0) and (a%7!=0):
+    		print('01')
+	elif (a%5!=0) and (a%7==0):
+    		print('10')
+	elif (a%5==0) and (a%7==0):
+    		print('11')
+
+4. 	import math
+
+	print('Введите коэффициенты квадратного уравннения a*(x^2)b*x+c=0: ')
+	a = float(input('a = '))
+	b = float(input('b = '))
+	c = float(input('c = '))
+
+	d = b**2 - 4*a*c
+
+	if d>0:
+    		print('x1 = ', (-b + d**0.5) / (2*a))
+    		print('x2 = ', (-b - d**0.5) / (2*a))
+	elif d==0:
+    		print('x = ', (-b) / (2*a))
+	else: 
+    		print('Корней нет')
+
+6. 	print('Введите список чисел: ')
+	a = input()
+	b = a.split(' ')
+	numb = len(set(b))
+	print('Количество уникальных элементов:', numb)
